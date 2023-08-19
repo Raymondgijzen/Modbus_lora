@@ -9,5 +9,16 @@
   "l2kw":{{L2_kW}},
   "l3kw":{{L3_kW}},
   "totalkw":{{Total_use_kW}},
-  "gridfrequenty":{{Grid_Frequency}}{{/payload}}{{/decoded}}
+  "gridfrequenty":{{Grid_Frequency}},
+  "l1fwkw":{{L1_FW_kW}},
+  "l2fwkw":{{L2_FW_kW}},
+  "l3fwkw":{{L3_FW_kW}},
+  "totalfwkw":{{Total_FW_kW}},
+  "l1revkw":{{L1_REV_kW}},
+  "l2revkw":{{L2_REV_kW}},
+  "l3revkw":{{L3_REV_kW}},
+  "totalrevkw":{{Total_REV_kW}},
+  "l1akw":{{L1_A_kW}},
+  "l2akw":{{L2_A_kW}},
+  "l3akw":{{L3_A_kW}}{{/payload}}{{/decoded}}
 }
