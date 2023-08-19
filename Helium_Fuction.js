@@ -49,6 +49,29 @@ function Decoder(bytes, port) {
     var L3_kW = L3_kW.toFixed(2);
     var Grid_Frequency = BytesToFloat32(bytes.slice(43, 47), true);
     var Grid_Frequency = Grid_Frequency.toFixed(2);
+    var total_FW_kW = BytesToFloat32(bytes.slice(47, 51), true);
+    var total_FW_kW = total_FW_kW.toFixed(2)
+    var L1_FW_kW = BytesToFloat32(bytes.slice(51, 55), true);
+    var L1_FW_kW = L1_FW_kW.toFixed(2);
+    var L2_FW_kW = BytesToFloat32(bytes.slice(55, 59), true);
+    var L2_FW_kW = L2_FW_kW.toFixed(2);
+    var L3_FW_kW = BytesToFloat32(bytes.slice(59, 63), true);
+    var L3_FW_kW = L3_FW_kW.toFixed(2);
+    var total_REV_kW = BytesToFloat32(bytes.slice(63, 67), true);
+    var total_REV_kW = total_REV_kW.toFixed(2)
+    var L1_REV_kW = BytesToFloat32(bytes.slice(67, 71), true);
+    var L1_REV_kW = L1_REV_kW.toFixed(2);
+    var L2_REV_kW = BytesToFloat32(bytes.slice(71, 75), true);
+    var L2_REV_kW = L2_REV_kW.toFixed(2);
+    var L3_REV_kW = BytesToFloat32(bytes.slice(75, 79), true);
+    var L3_REV_kW = L3_REV_kW.toFixed(2);
+    var L1_A_kW = BytesToFloat32(bytes.slice(79, 83), true);
+    var L1_A_kW = L1_A_kW.toFixed(2);
+    var L2_A_kW = BytesToFloat32(bytes.slice(83, 87), true);
+    var L2_A_kW = L2_A_kW.toFixed(2);
+    var L3_A_kW = BytesToFloat32(bytes.slice(87, 91), true);
+    var L3_A_kW = L3_A_kW.toFixed(2);
+    
     
     var decodedPayload = {
         Voltage_L1: voltage_l1,
@@ -62,6 +85,14 @@ function Decoder(bytes, port) {
         L2_kW: L2_kW,
         L3_kW: L3_kW,
         Grid_Frequency: Grid_Frequency,
+        Total_FW_kW: total_FW_kW,
+        L1_FW_kW: L1_FW_kW,
+        L2_FW_kW: L2_FW_kW,
+        L3_FW_kW: L3_FW_kW,
+        Total_REV_kW: total_REV_kW,
+        L1_REV_kW: L1_REV_kW,
+        L2_REV_kW: L2_REV_kW,
+        L3_REV_kW: L3_REV_kW,
     };
     return decodedPayload;
 }
