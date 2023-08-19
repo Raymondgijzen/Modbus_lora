@@ -93,6 +93,9 @@ function Decoder(bytes, port) {
         L1_REV_kW: L1_REV_kW,
         L2_REV_kW: L2_REV_kW,
         L3_REV_kW: L3_REV_kW,
+        L1_A_kW: L1_A_kW,
+        L2_A_kW: L2_A_kW,
+        L3_A_kW: L3_A_kW,
     };
     return decodedPayload;
 }
