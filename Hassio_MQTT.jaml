@@ -66,4 +66,46 @@ mqtt:
       unit_of_measurement: "Hz"
       device_class: frequency
       value_template: "{{ value_json.gridfrequenty }}"
+    - name: "Retour L1"
+      unique_id: modbusrevl1
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l1revkw }}"
+    - name: "Retour L2"
+      unique_id: modbusrevl2
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l2revkw }}"
+    - name: "Retour L3"
+      unique_id: modbusrevl3
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l3revkw }}"
+    - name: "Retour Totaal"
+      unique_id: modbustotalrev
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.totalrevkw }}"
+    - name: "Active L1"
+      unique_id: modbusal1
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l1akw }}"
+    - name: "Active L2"
+      unique_id: modbusal2
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l2akw }}"
+    - name: "Active L3"
+      unique_id: modbusal3
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l3akw }}"
     # And so on for other measurements
