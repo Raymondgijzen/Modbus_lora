@@ -1,0 +1,69 @@
+mqtt:
+  sensor:
+    - name: "Voltage L1"
+      unique_id: modbusvl1
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "V"
+      device_class: voltage
+      value_template: "{{ value_json.voltagel1 }}"
+    - name: "Voltage L2"
+      unique_id: modbusvl2
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "V"
+      device_class: voltage
+      value_template: "{{ value_json.voltagel2 }}"
+    - name: "Voltage L3"
+      unique_id: modbusvl3
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "V"
+      device_class: voltage
+      value_template: "{{ value_json.voltagel3 }}"
+    - name: "Amperage L1"
+      unique_id: modbusal1
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "A"
+      device_class: current
+      value_template: "{{ value_json.currentl1 }}"
+    - name: "Amperage L2"
+      unique_id: modbusal2
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "A"
+      device_class: current
+      value_template: "{{ value_json.currentl2 }}"
+    - name: "Amperage L3"
+      unique_id: modbusal3
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "A"
+      device_class: current
+      value_template: "{{ value_json.currentl3 }}"
+    - name: "Verbruik L1"
+      unique_id: modbususel1
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l1kw }}"
+    - name: "Verbruik L2"
+      unique_id: modbususel2
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l2kw }}"
+    - name: "Verbruik L3"
+      unique_id: modbususel3
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.l3kw }}"
+    - name: "Verbruik Totaal"
+      unique_id: modbustotaluse
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "kW"
+      device_class: power
+      value_template: "{{ value_json.totalkw }}"
+    - name: "Net Frequentie"
+      unique_id: modbusfreq
+      state_topic: "helium/sensor/kwh/rx"
+      unit_of_measurement: "Hz"
+      device_class: frequency
+      value_template: "{{ value_json.gridfrequenty }}"
+    # And so on for other measurements
