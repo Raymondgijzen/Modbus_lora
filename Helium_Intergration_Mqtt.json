@@ -1,0 +1,13 @@
+{{{#decoded}}{{#payload}}
+  "voltagel1":{{Voltage_L1}},
+  "voltagel2":{{Voltage_L2}},
+  "voltagel3":{{Voltage_L3}},
+  "currentl1":{{Current_L1}},
+  "currentl2":{{Current_L2}},
+  "currentl3":{{Current_L3}},
+  "l1kw":{{L1_kW}},
+  "l2kw":{{L2_kW}},
+  "l3kw":{{L3_kW}},
+  "totalkw":{{Total_use_kW}},
+  "gridfrequenty":{{Grid_Frequency}}{{/payload}}{{/decoded}}
+}
